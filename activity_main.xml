@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/allInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="setNew"
+            android:text="All information" />
+
+        <Button
+            android:id="@+id/mobileInformation"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="setNew"
+            android:text="Mobile And Sim Information" />
+
+        <Button
+            android:id="@+id/signalStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="Signal Strength"
+            android:onClick="setNew"/>
+        <Button
+            android:id="@+id/isConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="Internet Connectivity"
+            android:onClick="setNew"
+            />
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
